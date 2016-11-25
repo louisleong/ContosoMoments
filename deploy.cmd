@@ -66,7 +66,7 @@ SET MSBUILD_PATH=%ProgramFiles(x86)%\MSBuild\14.0\Bin\MSBuild.exe
 :: ----------
 
 echo Installing npm packages
-
+echo %DEPLOYMENT_SOURCE%
 IF EXIST "%DEPLOYMENT_SOURCE%\src\Cloud\ContosoMoments.API\App" (
   cd "%DEPLOYMENT_SOURCE%\src\Cloud\ContosoMoments.API\App"
   IF EXIST "package.json" (
